@@ -1,0 +1,10 @@
+body {
+  padding-left: 10rem;
+  padding-top: 3rem;
+  background-color: skyblue;
+}
+h3:hover {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.5s all;
+}

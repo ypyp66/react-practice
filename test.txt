@@ -1,0 +1,32 @@
+User {
+    password: String
+    nickname: String
+    email: String
+    phoneNum: String
+    type: ENUM //일반 or 어드민 (열거형중 택1)
+}
+
+Comment {
+    content : String //내용
+    partent : Id //대댓글
+    post: Post //어떤글인지 구분
+    author : User //User테이블에서 가져옴
+}
+
+Post {
+    title : String //글 제목
+    category : Category //카테고리 설정, join으로 참조가능
+    photo : String //사진
+    video : String //사진
+    content : String //내용
+    views : Number // 조회수
+    createDate : DateTime // 글작성날짜
+}
+Category{
+    categoryName : String //카테고리 이름
+}
+Calendar{
+    content : String //내용
+    startDay : DateTime //시작일
+    endDay : DateTime //종료일
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>자기소개</h1>
+    <p>
+        <h3>이름: 박연빈</h3>
+        <h3>전화번호 : 010-7128-3013</h3>
+        <h3>이메일 : ypyp66@naver.com</h3>
+        <h3>프로필 : 나이-25세, 서울 거주중</h3>
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/ko/thumb/4/4a/%EC%8B%A0%EC%A7%B1%EA%B5%AC.png/230px-%EC%8B%A0%EC%A7%B1%EA%B5%AC.png" alt="">
+    <p>
+        <input class="inp"type="text" name="inp" placeholder="숫자입력 후 엔터" onChange="q(value)">
+    </p>
+
+    <script>
+        function q(value){
+            console.log(value);
+            if(value === '1') window.alert("이름은 박연빈입니다");
+            else if(value === '2') window.alert("전화번호는 010-7128-3013입니다");
+            else if(value === '3') window.alert("이메일은 ypyp66@naver.com입니다");
+        }
+        function on(){
+            
+        }
+    </script>
+</body>
+</html>
